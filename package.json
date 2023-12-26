@@ -1,0 +1,22 @@
+{
+  "name": "getyourhr",
+  "version": "1.0.0",
+  "description": "HR management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashidharreddydakuri/getyourhr.git"
+  },
+  "keywords": [
+    "HR"
+  ],
+  "author": "ShashidharReddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashidharreddydakuri/getyourhr/issues"
+  },
+  "homepage": "https://github.com/shashidharreddydakuri/getyourhr#readme"
+}
