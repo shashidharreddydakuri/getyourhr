@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const userService = require('../Service/userService');
+const userService = require('../services/userService');
 
 // Register a new user
 router.post('/register', userService.registerUser);
