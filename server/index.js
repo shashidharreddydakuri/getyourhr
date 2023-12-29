@@ -7,6 +7,7 @@ const salaryRoutes = require('./controllers/salaryController');
 const workingDaysRoutes = require('./controllers/workingDaysController');
 const leaveRoutes = require('./controllers/leaveController');
 const lopRoutes = require('./controllers/lopController');
+const userRoutes = require('./controllers/userController')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -59,6 +60,8 @@ app.use('/api/v1/salaries', authenticateToken, authorizeRole('admin'), salaryRou
 app.use('/api/v1/working-days', authenticateToken, authorizeRole('admin'), workingDaysRoutes);
 app.use('/api/v1/leaves', authenticateToken, authorizeRole('admin'), leaveRoutes);
 app.use('/api/v1/lops', authenticateToken, authorizeRole('admin'), lopRoutes);
+app.use('/api/v1/users', authenticateToken, authorizeRole('admin'), userRoutes); // Include user routes
+app.use('/api/v1/departments', authenticateToken, authorizeRole('admin'), lopRoutes);
 
 // Authentication Route
 app.post('/api/v1/login', (req, res) => {
